@@ -1,10 +1,9 @@
 ﻿using AoC2023;
 
-string path = "test.txt";
-List<string> lines = new();
-
 ReadFile readFile = new();
-lines = readFile.Read(path, lines);
+
+string path = "test.txt";
+List<string> lines = readFile.Read(path);
 
 foreach (string line in lines)
 {
